@@ -1,11 +1,6 @@
-require 'rubygems'
-require 'bundler'
-require 'rake/testtask'
+require 'bundler/gem_tasks'
 require 'rdoc/task'
 
-Bundler::GemHelper.install_tasks
-
-desc "Create documentation"
 RDoc::Task.new("doc") { |rdoc|
   rdoc.title = "ABAnalyzer - A/B test analysis library for Ruby"
   rdoc.rdoc_dir = 'docs'
@@ -13,9 +8,11 @@ RDoc::Task.new("doc") { |rdoc|
   rdoc.rdoc_files.include('lib/**/*.rb')
 }
 
-desc "Run all unit tests"
-Rake::TestTask.new("test") { |t|
-  t.libs +=[ "lib", "." ]
+require 'rake/testtask'
+
+Rake::TestTask.new do |t|
   t.test_files = FileList['test/*_test.rb']
   t.verbose = true
-}
+end
+
+task :default => :test

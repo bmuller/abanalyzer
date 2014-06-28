@@ -1,4 +1,4 @@
-require File.join File.dirname(__FILE__), 'helper'
+require_relative 'helper'
 
 class ABTestTest < Test::Unit::TestCase
   def setup

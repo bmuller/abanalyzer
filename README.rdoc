@@ -1,8 +1,8 @@
 = ABAnalyzer
+{<img src="https://secure.travis-ci.org/bmuller/abanalyzer.png?branch=master" alt="Build Status" />}[https://travis-ci.org/bmuller/abanalyzer]
+{<img src="https://gemnasium.com/bmuller/abanalyzer.png" alt="Dependency Status" />}[https://gemnasium.com/bmuller/abanalyzer]
 
-ABAnalyzer is a Ruby library that will perform testing to determine if there is a statistical difference in categorical data (typically called an A/B Test).  By default, it uses a G-Test for independence, but a Chi-Square test for independence can also be used.  For more information, see:
-* http://en.wikipedia.org/wiki/G-test
-* http://en.wikipedia.org/wiki/Pearson%27s_chi-square_test
+ABAnalyzer is a Ruby library that will perform testing to determine if there is a statistical difference in categorical data (typically called an A/B Test).  By default, it uses a {G-Test for independence}[http://en.wikipedia.org/wiki/G-test], but a {Chi-Square test for independence}[http://en.wikipedia.org/wiki/Pearson%27s_chi-square_test] can also be used.
 
 == Installation
 Simply run:
@@ -11,7 +11,6 @@ Simply run:
 == Basic Usage
 The simplest test (which uses a gtest):
 
-  require 'rubygems'
   require 'abanalyzer'
   
   values = {}
@@ -26,7 +25,6 @@ The simplest test (which uses a gtest):
 == Multiple Categories
 You can use the ABAnalyzer module to test for differences in more than two categories.  For instance, to test accross three:
 
-  require 'rubygems'
   require 'abanalyzer'
   
   values = {}
@@ -86,4 +84,4 @@ This means (roughly) that if you ran this experiment over and over, 95% of the t
 
 == Running Tests
 Testing can be run by using:
-  rake test
+  bundle exec rake

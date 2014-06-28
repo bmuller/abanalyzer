@@ -1,6 +1,5 @@
 $:.push File.expand_path("../lib", __FILE__)
 require "abanalyzer/version"
-require "rake"
 require "date"
 
 Gem::Specification.new do |s|
@@ -10,10 +9,12 @@ Gem::Specification.new do |s|
   s.date = Date.today.to_s
   s.description = "A/B test analysis library for Ruby"
   s.summary = "A/B test analysis library for Ruby"
-  s.email = "brian.muller@livingsocial.com"
-  s.files = FileList["lib/**/*", "[A-Z]*", "Rakefile", "docs/**/*"]
-  s.homepage = "https://github.com/livingsocial/abanalyzer"
+  s.email = "bamuller@gmail.com"
+  s.files = `git ls-files`.split($/)
+  s.test_files = s.files.grep(%r{^(test|spec|features)/})
+  s.homepage = "https://github.com/bmuller/abanalyzer"
   s.require_paths = ["lib"]
+  s.add_development_dependency("rake")
+  s.add_development_dependency("rdoc")
   s.add_dependency('statistics2', '>= 0.54')
-  s.rubyforge_project = "abanalyzer"
 end
