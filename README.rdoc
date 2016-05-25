@@ -55,7 +55,7 @@ You can additionally get the actual score for either a Chi-Square test for indep
 
 
 == Sample Size Calculations
-Let's say you want to determine how large your sample size needs to be for an A/B test.  Let's say your baseline is 10%, and you want to be able to determine if there's at least a 10% relative lift (1% absolute) to 11%.  Let's assume you want a power[http://en.wikipedia.org/wiki/Statistical_power] of 0.8 and a {significance level}[http://en.wikipedia.org/wiki/Statistical_significance] of 0.05 (that is, an 80% chance of that you'll fail to recognize a difference when there is one, and a 5% chance of a false negative).
+Let's say you want to determine how large your sample size needs to be for an A/B test.  Let's say your baseline is 10%, and you want to be able to determine if there's at least a 10% relative lift (1% absolute) to 11%.  Let's assume you want a power[http://en.wikipedia.org/wiki/Statistical_power] of 0.8 and a {significance level}[http://en.wikipedia.org/wiki/Statistical_significance] of 0.05 (that is, an 80% chance of that you'll succeed in recognizing a difference when there is one, and a 5% chance of a false negative).
 
   ...
   ABAnalyzer.calculate_size(0.1, 0.11, 0.05, 0.8)
