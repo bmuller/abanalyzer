@@ -1,6 +1,5 @@
 = ABAnalyzer
-{<img src="https://secure.travis-ci.org/bmuller/abanalyzer.png?branch=master" alt="Build Status" />}[https://travis-ci.org/bmuller/abanalyzer]
-{<img src="https://gemnasium.com/bmuller/abanalyzer.png" alt="Dependency Status" />}[https://gemnasium.com/bmuller/abanalyzer]
+{<img src="https://secure.travis-ci.org/bmuller/abanalyzer.svg?branch=master" alt="Build Status" />}[https://travis-ci.org/bmuller/abanalyzer]
 
 ABAnalyzer is a Ruby library that will perform testing to determine if there is a statistical difference in categorical data (typically called an A/B Test).  By default, it uses a {G-Test for independence}[http://en.wikipedia.org/wiki/G-test], but a {Chi-Square test for independence}[http://en.wikipedia.org/wiki/Pearson%27s_chi-square_test] can also be used.
 
