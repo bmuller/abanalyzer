@@ -1,20 +1,23 @@
-Metrics/LineLength:
-  Max: 140
-
-Style/Documentation:
-  Enabled: false
-
-Metrics/MethodLength:
-  Max: 19
-
-Metrics/AbcSize:
-  Max: 43
-
 Lint/RaiseException:
   Enabled: true
 
 Lint/StructNewOverride:
   Enabled: true
+
+Metrics/AbcSize:
+  Max: 43
+
+Layout/LineLength:
+  Max: 140
+
+Metrics/MethodLength:
+  Max: 19
+
+Naming/MethodParameterName:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
 
 Style/HashEachMethods:
   Enabled: true

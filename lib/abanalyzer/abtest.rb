@@ -50,7 +50,7 @@ module ABAnalyzer
     end
 
     def expected(colname, rowname)
-      (@values.row_sum(rowname) * @values.column_sum(colname)).to_f / @values.total_sum.to_f
+      (@values.row_sum(rowname) * @values.column_sum(colname)).fdiv(@values.total_sum.to_f)
     end
 
     def df
