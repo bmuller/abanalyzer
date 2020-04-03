@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'statistics2'
 
 module ABAnalyzer
