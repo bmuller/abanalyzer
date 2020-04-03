@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'statistics2'
 
 module ABAnalyzer
@@ -26,7 +28,7 @@ module ABAnalyzer
     sides = 2.0
     alpha = 1 - confidence
     zcrit = Statistics2.pnormaldist(1 - (alpha / sides))
-    p = successes.to_f / trials.to_f
+    p = successes.to_f / trials
 
     interval = zcrit * Math.sqrt((p * (1 - p)) / trials.to_f)
     [p - interval, p + interval]

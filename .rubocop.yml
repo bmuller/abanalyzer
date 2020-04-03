@@ -1,4 +1,4 @@
-Metrics/LineLength:
+Layout/LineLength:
   Max: 140
 
 Style/Documentation:
@@ -9,3 +9,21 @@ Metrics/MethodLength:
 
 Metrics/AbcSize:
   Max: 43
+
+Naming/MethodParameterName:
+  Enabled: false
+
+Lint/RaiseException:
+  Enabled: true
+  
+Lint/StructNewOverride:
+  Enabled: true
+  
+Style/HashEachMethods:
+  Enabled: true
+  
+Style/HashTransformKeys:
+  Enabled: true
+  
+Style/HashTransformValues:
+  Enabled: true

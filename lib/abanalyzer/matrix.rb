@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module ABAnalyzer
   class Matrix
     attr_reader :columns, :rows

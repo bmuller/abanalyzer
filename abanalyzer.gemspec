@@ -1,4 +1,6 @@
-$LOAD_PATH.push File.expand_path('../lib', __FILE__)
+# frozen_string_literal: true
+
+$LOAD_PATH.push File.expand_path('lib', __dir__)
 require 'abanalyzer/version'
 require 'date'
 require 'English'
@@ -15,8 +17,8 @@ Gem::Specification.new do |s|
   s.test_files = s.files.grep(%r{^(test|spec|features)/})
   s.homepage = 'https://github.com/bmuller/abanalyzer'
   s.require_paths = ['lib']
-  s.add_development_dependency('rake', '~> 12.1')
-  s.add_development_dependency('minitest', '~> 5.10')
-  s.add_development_dependency('rubocop', '~> 0.50')
+  s.add_development_dependency('minitest', '~> 5.14')
+  s.add_development_dependency('rake', '~> 13.0')
+  s.add_development_dependency('rubocop', '~> 0.81')
   s.add_dependency('statistics2', '= 0.54')
 end
